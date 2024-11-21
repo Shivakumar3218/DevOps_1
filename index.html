@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Shop - Shiva Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .product p {
+            color: #777;
+            font-size: 14px;
+        }
+        .product .price {
+            color: #28a745;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Shiva Shop</h1>
+        <p>Your one-stop destination for premium Shiva Products</p>
+    </header>
+
+    <div class="container">
+        <!-- Shiva Product 1 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Shiva Product 1">
+            <h3>Shiva Product 1</h3>
+            <p>A description of Shiva Product 1.</p>
+            <p class="price">$20.00</p>
+            <button onclick="addToCart('Shiva Product 1', 20)">Add to Cart</button>
+        </div>
+
+        <!-- Shiva Product 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Shiva Product 2">
+            <h3>Shiva Product 2</h3>
+            <p>A description of Shiva Product 2.</p>
+            <p class="price">$30.00</p>
+            <button onclick="addToCart('Shiva Product 2', 30)">Add to Cart</button>
+        </div>
+
+        <!-- Shiva Product 3 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Shiva Product 3">
+            <h3>Shiva Product 3</h3>
+            <p>A description of Shiva Product 3.</p>
+            <p class="price">$25.00</p>
+            <button onclick="addToCart('Shiva Product 3', 25)">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shiva Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for adding items to the cart (example, no backend)
+        let cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ productName, price });
+            alert(productName + " has been added to your cart.");
+            console.log("Current Cart: ", cart);
+        }
+    </script>
+</body>
+</html>
